@@ -42,6 +42,10 @@
 
 .header nav ul li {
     margin-left: 25px;
+    border-right: 3px solid var(--darkgray);
+    border-bottom: 3px solid var(--pastel);
+    border-left: 3px solid var(--darkgray);
+    padding-bottom: 1%;
 }
 
 a {
@@ -61,7 +65,7 @@ a {
 /* MAIN STYLE START */
 .content {
     background-color: var(--darkolive);
-    padding: 0 10% 5% 10%;
+    padding: 2% 10% 5% 10%;
 }
 
 .content section {
@@ -76,6 +80,7 @@ a {
     border-right: 5px solid var(--lightolive);
     border-bottom: 5px solid var(--darkolive);
     border-left: 5px solid var(--darkolive);
+    border-top: 5px solid var(--darkolive);
     padding-right: 5%;
     padding-bottom: 5%;
     text-align: right;
@@ -105,11 +110,11 @@ a {
 .grid-item {
     grid-column: span 4;
     grid-row: span 2;
-    border: 3px dashed black;
+    border: 2px solid var(--pastel);
 }
 
 .grid-item img {
-    transition: transform .2s;/**/
+    transition: .5s;
     opacity: .7;
     width: 100%;
     height: 100%;
@@ -122,6 +127,11 @@ a {
 .main-item {
     grid-column: span 8;
     grid-row: span 4;
+}
+
+.text-box-rb {
+    position: absolute;
+    left: 1%;
 }
 /* PROJECTS STYLE END */
 
@@ -139,11 +149,48 @@ a {
 }
 
 .contact-me div ul li {
-    text-decoration: underline;
-    text-decoration-color: #3e4444;
+    border-right: 3px solid var(--darkolive);
+    border-bottom: 3px solid var(--pastel);
+    border-left: 3px solid var(--darkolive);
+    padding-bottom: 1%;
+}
+/* CONTACT ME STYLE END */
+
+/* MEDIA QUERIES STYLE START */
+@media screen and (max-width: 980px) {
+    .content {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .content section {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content div {
+        padding-top: 5%;
+        flex: none;
+    }
+    .content h2 {
+        border-right: 5px solid var(--darkolive);
+        border-bottom: 5px solid var(--lightolive);
+        text-align: center;
+        padding: 0 15% 3% 15%;
+        flex: none;
+    }
+    .contact-me div ul {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        width: 105%;
+    }
+    .contact-me div ul li {
+        padding-bottom: 1%;
+    }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
     .content {
         display: flex;
         flex-flow: column wrap;
@@ -156,42 +203,55 @@ a {
     }
     .content div {
         padding: 5% 5% 0 0;
+        flex: none;
     }
-    /* .projects {
-        display: flex;
-        flex-flow: row wrap;
-    } */
     .content h2 {
         border-right: 5px solid var(--darkolive);
         border-bottom: 5px solid var(--lightolive);
         text-align: center;
         padding: 0 15% 3% 15%;
+        flex: none;
     }
     .contact-me div ul {
         display: flex; 
         flex-direction: row;
         justify-content: space-between;
     }
-
-}
-
-@media screen and (max-width: 768px) {
-    .contact-me h2 {
-        border-right: 5px solid var(--darkolive);
-        border-bottom: 5px solid var(--lightolive);
-        text-align: center;
-        padding-right: 0;
-    }
+    /* .contact-me div ul li {
+        padding: 0 3%
+    } */
 }
 
 @media screen and (max-width: 575px) {
-    .contact-me h2 {
+    .content {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .content section {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .content div {
+        padding: 5% 5% 0 0;
+        flex: none;
+    }
+    .content h2 {
         border-right: 5px solid var(--darkolive);
         border-bottom: 5px solid var(--lightolive);
         text-align: center;
-        padding-right: 0;
+        padding: 0 15% 3% 15%;
+        flex: none;
+    }
+    .contact-me div ul {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact-me div ul li {
+        padding: 0 3%
     }
 }
-
-/* CONTACT ME STYLE END */
+/* MEDIA QUERIES STYLE END */
 /* MAIN STYLE END */
