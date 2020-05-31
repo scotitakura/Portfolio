@@ -61,18 +61,19 @@ a {
 /* MAIN STYLE START */
 .content {
     background-color: var(--darkolive);
-    padding-left: 30vh;
-    padding-right: 30vh;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .content section {
     padding: 50px;
+    justify-content: center;
 }
 
 .content h2 {
     font-size: 48px;
     border-right: 5px solid var(--lightolive);
-    padding-right: 5vh;
+    padding-right: 5%;
 }
 
 .content div{
@@ -86,16 +87,16 @@ a {
 .about-me h2 {
     text-align: right;
     flex-wrap: wrap;
-    flex: 2;
+    flex: 3;
 }
 
 .about-me div{
-    flex: 8;
+    flex: 7;
 }
 
-.about-me p{
-    padding-left: 5vh;
-    padding-right: 10vh;
+.about-me p {
+    padding-left: 5%;
+    padding-right: 10%;
 }
 
 .projects {
@@ -105,16 +106,33 @@ a {
 .projects h2 {
     text-align: right;
     flex-wrap: wrap;
-    flex: 2;
+    flex: 3;
 }
 
-.projects div{
-    flex: 8;
+.projects a {
+    flex-flow: row wrap;
 }
 
-.projects p {
-    padding-left: 5vh;
-    padding-right: 10vh;
+.grid-img {
+    padding-left: 5%;
+    padding-right: 10%;
+    flex: 7;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.grid-item {
+    grid-column: span 4;
+    grid-row: span 2;
+    border: 3px dashed black;
+}
+
+.main-item {
+    grid-column: span 8;
+    grid-row: span 4;
 }
 
 .contact-me {
@@ -125,12 +143,12 @@ a {
 
 .contact-me h2 {
     flex-wrap: wrap;
-    flex: 2;
+    flex: 3;
     text-align: right;
 }
 
 .contact-me div {
-    flex: 8;
+    flex: 7;
 }
 
 .contact-me div ul {
@@ -138,8 +156,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 5vh;
-    padding-right: 10vh;
+    padding-left: 5%;
+    padding-right: 10%;
 }
 
 .contact-me div ul li {
