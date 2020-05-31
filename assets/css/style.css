@@ -14,28 +14,33 @@
 
 /* HEADER STYLE START */
 .header {
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px 35px;
     background-color: var(--darkgray);
 }
 
 .header h1 {
-    display: inline-block;
     font-size: 48px;
 }
 
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-size: 20px;
 }
 
 .header nav ul {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
 }
 
 .header nav ul li {
-    display: inline-block;
     margin-left: 25px;
 }
 
@@ -56,10 +61,89 @@ a {
 /* MAIN STYLE START */
 .content {
     background-color: var(--darkolive);
+    padding-left: 30vh;
+    padding-right: 30vh;
 }
 
-.contact-info {
+.content section {
+    padding: 50px;
+}
+
+.content h2 {
+    font-size: 48px;
+    border-right: 5px solid var(--lightolive);
+    padding-right: 5vh;
+}
+
+.content div{
+    font-size: 20px;
+}
+
+.about-me {
     display: flex;
-    justify-content: space-around;
+}
+
+.about-me h2 {
+    text-align: right;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
+.about-me div{
+    flex: 8;
+}
+
+.about-me p{
+    padding-left: 5vh;
+    padding-right: 10vh;
+}
+
+.projects {
+    display: flex;
+}
+
+.projects h2 {
+    text-align: right;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
+.projects div{
+    flex: 8;
+}
+
+.projects p {
+    padding-left: 5vh;
+    padding-right: 10vh;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.contact-me h2 {
+    flex-wrap: wrap;
+    flex: 2;
+    text-align: right;
+}
+
+.contact-me div {
+    flex: 8;
+}
+
+.contact-me div ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 5vh;
+    padding-right: 10vh;
+}
+
+.contact-me div ul li {
+    text-decoration: underline;
+    text-decoration-color: underline var(--darkgray);
 }
 /* MAIN STYLE END */
