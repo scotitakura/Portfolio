@@ -2,27 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gainsboro;
+}
+:root {
+    --darkgray: #3e4444;
+    --lightolive: #82b74b;
+    --darkolive: #405d27;
+    --pastel: #c1946a;
 }
 
 /* HEADER STYLE START */
-
-/* HEADER STYLE END */
-body {
-    color: pink;
+.header {
+    padding: 20px;
+    background-color: var(--darkgray);
 }
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+/* HEADER STYLE END */
+
 /* HERO STYLE START */
 .hero {
-    /* background-image: url("../images/DSC02878.JPG");
+    background-image: url("../images/DSC02878.JPG");
     background-size: cover;
-    background-position: center; */
-    background: black;
+    background-position: center;
+    height: 80vh;
 }
 /* HERO STYLE END */
 
-/* */
+/* MAIN STYLE START */
+.content {
+    background-color: var(--darkolive);
+}
 
-/* */
-
-/* */
-
-/* */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+/* MAIN STYLE END */
