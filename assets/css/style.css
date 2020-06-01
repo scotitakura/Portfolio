@@ -117,6 +117,7 @@ a {
     grid-column: span 4;
     grid-row: span 2;
     border: 3px solid var(--pastel);
+    position: relative;
 }
 
 .grid-item img {
@@ -135,37 +136,17 @@ a {
     grid-row: span 4;
 }
 
-.text-box-rb {
+.text-box-main {
     position: absolute;
-    top: 185%;
+    top: 190px;
     z-index: 1;
     background-color: var(--pastel);
     padding: 20px 30px 20px 10px;
 }
-.text-box-ho {
+
+.text-box {
     position: absolute;
-    top: 168%;
-    z-index: 1;
-    background-color: var(--pastel);
-    padding: 10px 15px 10px 5px;
-}
-.text-box-ip1 {
-    position: absolute;
-    top: 188%;
-    z-index: 1;
-    background-color: var(--pastel);
-    padding: 10px 15px 10px 5px;
-}
-.text-box-ip2 {
-    position: absolute;
-    top: 207%;
-    z-index: 1;
-    background-color: var(--pastel);
-    padding: 10px 15px 10px 5px;
-}
-.text-box-ip3 {
-    position: absolute;
-    top: 207%;
+    top: 60px;
     z-index: 1;
     background-color: var(--pastel);
     padding: 10px 15px 10px 5px;
@@ -229,61 +210,30 @@ a {
     .contact-me div ul li {
         padding-bottom: 1%;
     }
-    .text-box-rb {
-        top: 213%;
+    .text-box-main{
+        top: 170px;
     }
-    .text-box-ho {
-        top: 197%;
-    }
-    .text-box-ip1 {
-        top: 216%;
-    }
-    .text-box-ip2 {
-        top: 235%;
-    }
-    .text-box-ip3 {
-        top: 235%;
+    .text-box {
+        top: 50px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .text-box-rb {
-        top: 195%;
+    .text-box-main {
+        top: 170px;
     }
-    .text-box-ho {
-        top: 182%;
-    }
-    .text-box-ip1 {
-        top: 198%;
-    }
-    .text-box-ip2 {
-        top: 214%;
-    }
-    .text-box-ip3 {
-        top: 214%;
+    .text-box {
+        top: 50px;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .text-box-rb {
-        top: 174%;
+    .text-box-main {
+        top: 170px;
     }
-    .text-box-ho {
-        top: 164%;
-    }
-    .text-box-ip1 {
-        top: 176%;
-    }
-    .text-box-ip2 {
-        top: 188%;
-    }
-    .text-box-ip3 {
-        top: 188%;
+    .text-box {
+        top: 50px;
     }
 }
 /* MEDIA QUERIES STYLE END */
 /* MAIN STYLE END */
-
-/* I could not get my text-boxes to stay on 
-my images and I tried all weekend to no luck, 
-but it works on my computer with the current code*/
