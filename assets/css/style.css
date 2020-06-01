@@ -94,6 +94,12 @@ a {
     padding-right: 5%;
 }
 
+/* ABOUT ME STYLE START */
+.about-me p {
+    text-indent: 50px;
+  }
+/* ABOUT STYLE START */
+
 /* PROJECTS STYLE START */
 .grid-img {
     display: grid;
@@ -241,98 +247,38 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .content {
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .content section {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .content div {
-        padding-top: 5%;
-        flex: none;
-    }
-    .content h2 {
-        border-right: 5px solid var(--darkolive);
-        border-bottom: 5px solid var(--lightolive);
-        text-align: center;
-        padding: 0 15% 3% 15%;
-        flex: none;
-    }
-    .contact-me div ul {
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-between;
-        width: 105%;
-    }
-    .contact-me div ul li {
-        padding-bottom: 1%;
-    }
     .text-box-rb {
-        top: 203%;
+        top: 195%;
     }
     .text-box-ho {
-        top: 197%;
+        top: 182%;
     }
     .text-box-ip1 {
-        top: 216%;
+        top: 198%;
     }
     .text-box-ip2 {
-        top: 235%;
+        top: 214%;
     }
     .text-box-ip3 {
-        top: 235%;
+        top: 214%;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .content {
-        display: flex;
-        flex-flow: column wrap;
-    }
-    .content section {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .content div {
-        padding-top: 5%;
-        flex: none;
-    }
-    .content h2 {
-        border-right: 5px solid var(--darkolive);
-        border-bottom: 5px solid var(--lightolive);
-        text-align: center;
-        padding: 0 15% 3% 15%;
-        flex: none;
-    }
-    .contact-me div ul {
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-between;
-        width: 105%;
-    }
-    .contact-me div ul li {
-        padding-bottom: 1%;
-    }
     .text-box-rb {
-        top: 203%;
+        top: 174%;
     }
     .text-box-ho {
-        top: 197%;
+        top: 164%;
     }
     .text-box-ip1 {
-        top: 216%;
+        top: 176%;
     }
     .text-box-ip2 {
-        top: 235%;
+        top: 188%;
     }
     .text-box-ip3 {
-        top: 235%;
+        top: 188%;
     }
 }
 /* MEDIA QUERIES STYLE END */
